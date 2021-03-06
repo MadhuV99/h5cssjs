@@ -1,0 +1,13 @@
+cd C:/Users/madhu/projects/h5cssjs
+echo "# HTML5, CSS, JS" >> README.md 
+git init 
+git add README.md 
+git commit -m "Latest commit" 
+git branch -M main 
+git remote add origin https://github.com/MadhuV99/h5cssjs.git   
+git push -u origin main 
+
+git add -A 
+git commit -m "Latest Commit" 
+git push shinjuLast1MM 
+
