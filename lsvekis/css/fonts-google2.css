@@ -1,0 +1,17 @@
+      @import url("https://fonts.googleapis.com/css?family=Pacifico");
+      .myClass1 {
+        font-family: "Pacifico", cursive;
+        text-align: justify;
+      }
+      .myClass2 {
+        font-style: italic;
+        color: red;
+      }
+      .myClass3 {
+        color: aquamarine;
+        font-weight: bold;
+      }
+      .myClass4 {
+        color: bisque;
+        font-size: 2em;
+      }
