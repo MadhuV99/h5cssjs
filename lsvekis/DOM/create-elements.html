@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>My Item</li>
+      <li>Another Item</li>
+      <li>Wow Cool</li>
+      <li>New Color</li>
+    </ul>
+    <input type="text" name="newItem" />
+    <div id="clicker">Click Me</div>
+    <script>
+      var mainList = document.querySelector("ul");
+      var clicker = document.getElementById("clicker");
+
+      clicker.addEventListener("click", function () {
+        var li = document.createElement("li");
+        var allListItems = document.querySelectorAll("li");
+        //var textValue = "test " + (allListItems.length + 1);
+        //var textValue = "test " + (mainList.childElementCount + 1);
+        var textValue = "test " + (mainList.children.length + 1);
+        var tempNode = document.createTextNode(textValue);
+        li.appendChild(tempNode);
+        mainList.appendChild(li);
+      });
+    </script>
+  </body>
+</html>
