@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>JavaScript DOM Course</title>
+  </head>
+  <body>
+    <a href="http://placeholder.com">
+        <img src="http://via.placeholder.com/250/00ffff/000000" />
+        <!-- <img src="http://via.placeholder.com/250/0ff/000" /> -->
+    </a>
+    <br />
+    <img src="http://via.placeholder.com/350x150/00ff00/ffffff" />
+    <!-- <img src="http://via.placeholder.com/350x150/0f0/ffffff" /> -->
+    <script>
+      var el1 = document.getElementsByTagName("a");
+      console.log(el1[0]);
+      var el2 = document.getElementsByTagName("img");
+      console.log(el2[1]);
+      var temp = el1[0].getAttribute("href");
+      el1[0].setAttribute("href", "http://www.google.com");
+      var tempImg1 = el2[0].getAttribute("src");
+      var tempImg2 = el2[1].getAttribute("src");
+      el2[0].setAttribute("src", tempImg2);
+      el2[1].setAttribute("src", tempImg1);
+      console.log(tempImg1);
+    </script>
+  </body>
+</html>
