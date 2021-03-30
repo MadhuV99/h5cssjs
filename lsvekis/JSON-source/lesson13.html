@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>JSON</title>
+</head>
+
+<body>
+    <div id="output1"></div>
+    <div id="output2"></div>
+    <script>
+        var output1 = document.getElementById("output1");
+        var output2 = document.getElementById("output2");
+        var temp = {
+                    "firstName": "Alex"
+                    , "last": "Micheals"
+                    , "age": 22
+        }
+        var tempString = JSON.stringify(temp);
+        //localStorage.setItem('test',tempString);
+        var tempObj = localStorage.getItem('test');
+        console.log(tempObj);
+        var obj2 = JSON.parse(tempObj);
+        
+        
+    </script>
+</body>
+
+</html>
