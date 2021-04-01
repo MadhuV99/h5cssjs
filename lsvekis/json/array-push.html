@@ -2,6 +2,7 @@
   <head>
     <title>JSON</title>
   </head>
+
   <body>
     <div id="output1"></div>
     <div id="output2"></div>
@@ -20,12 +21,37 @@
             last: "Smith",
             age: 50,
           },
+          {
+            firstName: "Linda",
+            last: "Jones",
+            age: 40,
+          },
+
+          {
+            firstName: "Steve",
+            last: "Jones",
+            age: 40,
+          },
+        ],
+        places: [
+          {
+            location: "Toronto",
+            lat: 70,
+          },
+          {
+            location: "New York",
+            lat: 80,
+          },
         ],
       };
+      console.dir(obj);
+      var temp = {
+        firstName: "Alex",
+        last: "Micheals",
+        age: 22,
+      };
+      obj.people.push(temp);
       console.log(obj);
-      //output1.innerHTML = obj.people[1].firstName + " " + obj.people[1].last;
-      output1.innerHTML = obj.people[1]["firstName"] + " " + obj.people[1].last;
-      output2.innerHTML = obj.people[0].firstName + " " + obj.people[0].last;
     </script>
   </body>
 </html>

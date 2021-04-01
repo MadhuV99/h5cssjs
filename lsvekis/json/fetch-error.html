@@ -1,0 +1,33 @@
+<head>
+    <title>JSON</title>
+</head>
+ 
+<body>
+    <div id="output"></div>
+    <script>
+        
+        //const url = "https://api.myjson.com/bins/hqys2";
+        var url = "https://jsonplaceholder.typicode.com/users";
+        fetch(url).then(resp => {
+            return resp.json();
+        }).then(data => {
+            console.log(data);
+            console.log(JSON.stringify(data));
+        }).catch(error => {
+            console.log(error);
+        })
+        /*
+        //var url = "https://api.myjson.com/bins/hqys2";
+        var url = "https://jsonplaceholder.typicode.com/users";
+        fetch(url).then(function (resp) {
+            return resp.json();
+        }).then(function (data) {
+            console.log(data);
+        }).catch(function (error) {
+            console.log(error);
+        });
+        */
+    </script>
+</body>
+ 
+</html>
