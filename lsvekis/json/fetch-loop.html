@@ -1,29 +1,43 @@
 <html>
- 
-<head>
+  <head>
     <title>JSON</title>
-</head>
- 
-<body>
+  </head>
+
+  <body>
     <div id="output"></div>
     <script>
- 
-        const output = document.getElementById("output");
-        const url = "https://randomuser.me/api/?results=5";
-        fetch(url).then(function(resp){
-            return resp.json()
-        }).then(function(data){
-        data.results.forEach(function(person){
+      const output = document.getElementById("output");
+      const url = "https://randomuser.me/api/?results=5";
+      /*
+      fetch(url)
+        .then(function (resp) {
+          return resp.json();
+        })
+        .then(function (data) {
+          data.results.forEach(function (person) {
             console.log(person.name.first);
             console.log(person.picture.thumbnail);
             output.innerHTML += person.name.first + " ";
-            output.innerHTML += "<img src='"+person.picture.thumbnail+"'><br>";
+            output.innerHTML +=
+              "<img src='" + person.picture.thumbnail + "'><br>";
+          });
+          console.log(data);
+        });
+        */
+      fetch(url)
+        .then((resp) => {
+          return resp.json();
         })
-            console.log(data);  
-        })
- 
- 
+        .then((data) => {
+          data.results.forEach(function (person) {
+            console.log(person.name.first);
+            console.log(person.picture.thumbnail);
+            output.innerHTML += person.name.first + " ";
+            output.innerHTML +=
+              "<img src='" + person.picture.thumbnail + "'><br>";
+          });
+          console.log(data);
+        });
     </script>
-</body>
- 
+  </body>
 </html>
