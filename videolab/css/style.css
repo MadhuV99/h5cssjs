@@ -125,8 +125,14 @@ input, textarea {
     /* transition: all 500ms ease-in-out ; */
     -webkit-transition: background, padding 500ms ease-in-out ;
     -moz-transition: background, padding 500ms ease-in-out ;
+    -ms-transition: background, padding 500ms ease-in-out ;
     -o-transition: background, padding 500ms ease-in-out ;
-
+    /* transform: scale(1.0) */
+    /* transform: skewX(45deg);  */
+    /* transform: skewY(45deg); */
+    /* transform: translate(50px, 30px); */
+    /* transform: rotate(-45deg); */
+    transform: matrix(1, 0.45, 0.45, 1, 50, 30);
 }
 
 .submit-button:hover {
@@ -134,4 +140,30 @@ input, textarea {
     padding: 20px 30px;
 }
 
+#about-me {
+    /* animation-name: red-to-black;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse; */
+    animation: red-to-black 5s linear 2s 100 alternate-reverse;
+}
 
+@keyframes red-to-black {
+    0% {
+        background: red;
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        background: yellow;
+        transform: translate(10px, 10px);
+    }
+
+    100% {
+        background: black;
+        transform: translate(20px, 20px);
+    }
+
+}
