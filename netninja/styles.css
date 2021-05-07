@@ -1,0 +1,37 @@
+header {
+    background-color: #f63232;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner .welcome {
+    background-color: #feb614;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+
+.banner .welcome span {
+    font-size: 1.4em;
+}
+
+.banner h2 span {
+    font-size: 1.3em;
+}
