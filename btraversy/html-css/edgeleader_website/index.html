@@ -27,7 +27,8 @@
     <!-- nav Bar -->
     <nav id="navbar">
       <h1 class="logo">
-        <span class="text-primary"> <i class="fas fa-book-open"></i>Maxam</span>Trendz
+        <span class="text-primary"> <i class="fas fa-book-open"></i> Maxam</span
+        >Trendz
       </h1>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -40,9 +41,10 @@
     <!-- Header: Showcase -->
     <header id="showcase">
       <div class="showcase-content">
-        <h1 class="l-heading">The Sky Is The Limit</h1>
+        <h1 class="l-heading">Quo Vadis?</h1>
         <p class="lead">
-          Presented in the interests of Advertising, Training, Development, Deployment and Testing.
+          Presented in the interests of Advertising, Training, Development,
+          Deployment and Testing.
         </p>
         <a href="#what" class="btn">Read More</a>
       </div>
@@ -136,7 +138,7 @@
         <form action="process.php" method="POST">
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter Name" />
+            <input type="text" id="name" name="name" placeholder="Enter Name" required />
           </div>
           <div class="form-group">
             <label for="email">Email</label>
@@ -145,6 +147,7 @@
               id="email"
               name="email"
               placeholder="Enter Email"
+              required
             />
           </div>
           <div class="form-group">
@@ -161,7 +164,8 @@
             <textarea
               id="message"
               name="message"
-              placeholder="Enter Message"
+              placeholder="Enter Message" 
+              required
             ></textarea>
           </div>
           <input type="submit" value="Send" class="btn btn-dark" />
