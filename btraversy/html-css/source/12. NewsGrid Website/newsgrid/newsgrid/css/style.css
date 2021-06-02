@@ -7,7 +7,7 @@
 }
 
 .category {
-  --sports-color: #f95500;
+  --sports-color: #f99500;
   --ent-color: #a66bbe;
   --tech-color: #009cff;
 }
@@ -25,7 +25,7 @@ body {
 }
 
 a {
-  color: var(--dark-color);
+  color: #333;
   text-decoration: none;
 }
 
@@ -34,7 +34,7 @@ ul {
 }
 
 p {
-  margin: 0.5rem 0;
+  margin: .5rem 0;
 }
 
 img {
@@ -43,11 +43,11 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Staatliches', cursive;
-  margin-bottom: 0.55rem;
+  margin-bottom: .55rem;
   line-height: 1.3;
 }
 
-    /* Utility  */
+/* Utility */
 .container {
   max-width: var(--max-width);
   margin: auto;
@@ -57,29 +57,29 @@ h1, h2, h3, h4, h5, h6 {
 
 .category {
   display: inline-block;
-  padding: 0.4rem 0.6rem;
-  color: white;
+  color: #fff;
   font-size: 0.55rem;
   text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
   border-radius: 15px;
   margin-bottom: 0.5rem;
 }
 
-.category-sports { background: var(--sports-color);}
-.category-ent { background: var(--ent-color);}
-.category-tech { background: var(--tech-color);}
+.category-sports { background: var(--sports-color) }
+.category-ent { background: var(--ent-color) }
+.category-tech { background: var(--tech-color) }
 
 .btn {
   display: inline-block;
   border: none;
   background: var(--dark-color);
-  color: white;
+  color: #fff;
   padding: 0.5rem 1.5rem;
 }
 
-.btn-light { background: var(--light-color); }
-.btn-primary { background: var(--primary-color); }
-.btn-secondary { background: var(--secondary-color); }
+.btn-light { background: var(--light-color) }
+.btn-primary { background: var(--primary-color) }
+.btn-secondary { background: var(--secondary-color) }
 
 .btn-block {
   display: block;
@@ -92,23 +92,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card {
-  background: white;
+  background: #fff;
   padding: 1rem;
 }
 
 .bg-dark {
   background: var(--dark-color);
-  color: white;
+  color: #fff;
 }
 
 .bg-primary {
   background: var(--primary-color);
-  color: white;
+  color: #fff;
 }
 
 .bg-secondary {
   background: var(--secondary-color);
-  color: white;
+  color: #fff;
 }
 
 .bg-dark h1,
@@ -123,19 +123,23 @@ h1, h2, h3, h4, h5, h6 {
 .bg-secondary h2,
 .bg-secondary h3,
 .bg-secondary a {
-  color: white;
+  color: #fff;
 }
 
-.py-1 { padding: 1.5rem 0;}
-.py-2 { padding: 2rem 0;}
-.py-3 { padding: 3rem 0;}
-.p-1 { padding: 1.5rem;}
-.p-2 { padding: 2rem;}
-.p-3 { padding: 3rem;}
+.py-1 { padding: 1.5rem 0 }
+.py-2 { padding: 2rem 0 }
+.py-3 { padding: 3rem 0 }
+.p-1 { padding: 1.5rem }
+.p-2 { padding: 2rem }
+.p-3 { padding: 3rem }
+
+.l-heading {
+  font-size: 3rem;
+}
 
 .list li {
-  padding: 0.5rem 0;
-  border-bottom: 1px dotted #555;
+  padding: .5rem 0;
+  border-bottom: #555 dotted 1px;
   width: 90%;
 }
 
@@ -143,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color) !important;
 }
 
-    /* Inner page grid container  */
+/* Inner page grid container */
 .page-container {
   display: grid;
   grid-template-columns: 5fr 2fr;
@@ -155,9 +159,9 @@ h1, h2, h3, h4, h5, h6 {
   grid-row: 1 / span 3;
 }
 
-    /* Navigation */
+/* Navigation */
 #main-nav {
-  background: white;
+  background: #fff;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -166,43 +170,47 @@ h1, h2, h3, h4, h5, h6 {
 #main-nav .container {
   display: grid;
   grid-template-columns: 6fr 3fr 2fr;
-  align-items: center;
   padding: 1rem;
+  align-items: center;
 }
 
-#main-nav .container .logo {
+#main-nav .logo {
   width: 180px;
 }
 
-#main-nav .container ul {
+#main-nav ul {
   justify-self: end;
   display: flex;
 }
 
-#main-nav .container ul li a {
+#main-nav ul li a {
   padding: 0.75rem;
   font-weight: bold;
 }
 
-#main-nav .container ul li a.current {
+#main-nav ul li a.current {
   background: var(--primary-color);
-  color: white;
+  color: #fff;
 }
 
-#main-nav .container ul li a:hover {
+#main-nav ul li a:hover {
   background: var(--light-color);
   color: var(--dark-color);
 }
 
-#main-nav .container .social i {
-  color: #777;
-  margin-right: 0.5rem;
+#main-nav .social {
+  justify-self: center;
 }
 
-    /* Showcase  */
+#main-nav .social i {
+  color: #777;
+  margin-right: .5rem;
+}
+
+/* Showcase */
 #showcase {
-  color: white;
-  background: var(--dark-color);
+  color: #fff;
+  background: #333;
   padding: 2rem;
   position: relative;
 }
@@ -218,47 +226,58 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.4;
 }
 
-#showcase .container .showcase-container {
+#showcase .showcase-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 50vh;
   justify-content: center;
   align-items: center;
+  height: 50vh;
 }
 
-#showcase .container .showcase-container .showcase-content {
+#showcase .showcase-content {
   z-index: 1;
 }
 
-#showcase .container .showcase-container .showcase-content p {
+#showcase .showcase-content p {
   margin-bottom: 1rem;
 }
 
-    /* Home Articles  */
-#home-articles .container .articles-container {
+/* Home Articles */
+#home-articles .articles-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
 
-#home-articles .container .articles-container > *:first-child,
-#home-articles .container .articles-container > *:last-child {
-  grid-column: 1 / span 2;
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   align-items: center;
+  grid-column: 1 / span 2;
 }
 
-#home-articles .container .articles-container > *:last-child {
+#home-articles .articles-container > *:last-child {
   grid-column: 2 / span 2;
 }
 
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
 
-    /* Footer  */
+#article .meta .category {
+  margin-top: 0.4rem;
+}
+
+/* Footer */
 #main-footer {
   background: var(--dark-color);
-  color: white;
+  color: #fff;
 }
 
 #main-footer img {
@@ -266,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main-footer a {
-  color: white;
+  color: #fff;
 }
 
 #main-footer .footer-container {
@@ -278,8 +297,8 @@ h1, h2, h3, h4, h5, h6 {
 #main-footer .footer-container > *:last-child {
   background: #444;
   grid-column: 1 / span 4;
+  padding: .5rem;
   text-align: center;
-  padding: 0.5rem;
   font-size: 0.75rem;
 }
 
@@ -292,5 +311,3 @@ h1, h2, h3, h4, h5, h6 {
 #main-footer .footer-container input[type='submit'] {
   width: 90%;
 }
-
-    /* End of Style  */
