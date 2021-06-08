@@ -1,0 +1,19 @@
+    // Set Text Color 
+@function set-text-color($color) {
+  @if(lightness($color) > 50) {
+    @return black;
+  } @else {
+    @return white;
+  }
+}
+
+    // Transform mixin
+@mixin transform($property) {
+  --webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+
+}
+
+
+    // End of Style 
