@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic JS</title>
+</head>
+<body>
+
+
+  <!-- <script src="demo.js" type="text/javascript"></script> -->
+  <script type="text/javascript">
+    //document.write('<h1>Internal to HTML File</h1>');
+/* Arithmetic operators
+    // Addition
+    var a = 3;
+    var b = 8;
+    var c = 6;
+    var result = c + b + "Tanmay" + a + b;
+    var result2 = a + b *c;
+
+    document.write('<h1>Result is: '+ result + '</h1>');
+    document.write('<h1>Result is: '+ result2 + '</h1>');
+*/
+/* If - Else
+    document.write("<h1>If - else control statements</h1>")
+    var x = 65;
+    if(x % 2 === 0) {
+      document.write("<h3>EVEN Number</h1>")
+    } else {
+      document.write("<h3>ODD Number</h1>")
+    }
+
+    var x = -10
+    if(x > 0) {
+      document.write("<h3>POSITIVE Number</h1>")
+    } else if (x < 0) {
+      document.write("<h3>NEGATIVE Number</h1>")
+    } else {
+      document.write("<h3>Number is neither POSITIVE nor NEGATIVE</h1>")
+    }
+
+    var x = 8;
+    if(x > 0 && x % 2 === 0) {
+      document.write("<h3>EVEN and POSITIVE number</h1>")
+    }
+*/
+/* switch
+    var nDay = 41;
+    var sDay = '';
+    switch(nDay) 
+    {
+      case 1:
+        sDay = ' Sunday';
+        break;
+      case 2:
+        sDay = ' Monday';
+        break;
+      case 3:
+        sDay = ' Tuesday';
+        break;
+      case 4:
+        sDay = ' Wednesday';
+        break;
+      case 5:
+        sDay = ' Thursday';
+        break;
+      case 6:
+        sDay = ' Friday';
+        break;
+      case 7:
+        sDay = ' Saturday';
+        break;
+      default:
+        sDay = ' Invalid';
+    }
+    document.write("<h1>"+sDay+"</h1>")
+*/
+/* switch
+    var sDay = "friday";
+    var nDay = 0;
+    switch(sDay) 
+    {
+      case "sunday":
+        nDay = 1;
+        break;
+      case "monday":
+        nDay = 2;
+        break;
+      case "tueday":
+        nDay = 3;
+        break;
+      case "wednesday":
+        nDay = 4;
+        break;
+      case "thursday":
+        nDay = 5;
+        break;
+      case "friday":
+        nDay = 6;
+        break;
+      case "saturday":
+        nDay = 7;
+        break;
+      default: 
+        nday = -1;
+    };
+    document.write("<h1>"+nDay+"</h1>")
+*/
+/* For Loop
+    for(var i = 1; i <= 10; i++) {
+      document.write("<h1>"+ (5 * i) +"</h1>")
+    }
+ 
+    for(var i = 2; i <= 10; i+=2 ) {
+      document.write("<h1>"+ i +"</h1>")
+    }
+*/
+/* While loop
+    var x = 1;
+    while(x < 10) {
+      document.write("<h1>"+ x +"</h1>")
+      x+=2;
+    }
+*/  
+
+/*  Do-While loop
+ 
+    var x = 1;
+    do {
+      document.write("<h1>"+ x +"</h1>")
+      x+=2;
+    } while(x < 10); 
+*/ 
+
+
+/* Functions
+
+    function addNums(a=0, b=0) {
+      var total = a + b;
+      document.write("<h1>The total is: "+ total +"</h1>")
+    }
+
+    addNums();
+    addNums(2, 3);
+    addNums("Max", "Vax");
+
+    function addNums(a=0, b=0) {
+      var total = a + b;
+      return total;
+    }
+
+    //var output = addNums();
+    //var output = addNums(2, 3);
+    var output = addNums("Max ", "Vax");
+    document.write("<h1>The Output is: "+ output +"</h1>")
+*/
+
+/*  Scope of Variables
+    var b = 6;
+    function myfunction() {
+      var a = 5; //local variable
+      c = 7;
+      document.write("<h2>Inside myfunction a = "+a+"</h2>");
+      document.write("<h2>Inside myfunction b = "+b+"</h2>");
+    };
+
+   
+    //document.write("<h2>Outside myfunction a = "+a+"</h2>");
+    document.write("<h2>Outside myfunction b = "+b+"</h2>");
+    document.write("<h2>Outside myfunction c = "+c+"</h2>");
+    myfunction();
+*/
+
+/*    Arrays 
+  var car1 = 'Audi';
+    var car2 = 'Volvo';
+    var car3 = 'BMW';
+
+    //var cars = [car1, car2, car3];
+    //var cars = new Array(car1, car2, car3);
+    var cars;
+    cars = [car1, car2, car3];
+    cars.push('Merc');
+    cars.push(5);
+
+    for(var i = 0; i < cars.length; i++) {
+      document.write("<h2> "+cars[i]+"</h2>");
+    }
+*/
+/*    Objects
+    var car = {
+      car_brand: 'Tesla',
+      car_model: 'Model 3',
+      car_price: 35000,
+
+      teslaAutoPilot : function() {
+        return ("This car has Autopilot!");
+      }
+    }
+
+    function Cars(brand, model, price) {
+      this.car_brand = brand;
+      this.car_model = model;
+      this.car_price = price;
+
+      //this.teslaAutoPilot = function() {
+      //  return ("This car has Autopilot!");
+      //}
+    }
+
+    Cars.prototype.teslaAutoPilot = function() {
+      return ("This car has Autopilot!");
+    }
+
+    var car = new Cars('Tesla', 'Model 3', 35000);
+    document.write("<h2> "+ car.car_brand + ', ' + car.car_model + ', $' + car.car_price +"</h2>");
+    document.write("<h2> "+ car.teslaAutoPilot() +"</h2>");
+
+    var car2 = new Cars('Tesla', 'Model P', 45000);
+    car2.fuelType = "Electric";
+    document.write("<h2> "+ car2.car_brand + ', ' + car2.car_model +
+      ', ' + car2.fuelType + ', $' + car2.car_price +"</h2>");
+    document.write("<h2> "+ car2.teslaAutoPilot() +"</h2>");
+    delete car2.car_price;
+    document.write("<h2> Car# 2 Price: "+ car2.car_price +"</h2>");
+    car2.car_price = "$45,000"
+    document.write("<h2> Car# 2 Price: "+ car2.car_price +"</h2>");
+    document.write("<h2> Type of Car# 2 Price: "+ typeof(car2.car_price) +"</h2>");
+   
+*/
+
+/* string Objects
+*/
+    var str1 = String();
+    document.write("<h2> "+ typeof(str1) +"</h2>");
+    var str2 = new String();
+    document.write("<h2> "+ typeof(str2) +"</h2>");
+
+
+
+
+
+  </script>
+</body>
+</html>
